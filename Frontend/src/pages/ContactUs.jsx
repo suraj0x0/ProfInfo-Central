@@ -11,14 +11,14 @@ function ContactUs(){
              key="Suraj Patel"
              name="Suraj Patel"
              phone="Instructor"
-             image="images/indrnil.jpg"
+             image="image/boss.jpg"
              email="suraj.2023ug2054@iiitranchi.ac.in"
              linkedInLink="https://linkedin.com/in/indranil-saha-8859135"
              instagramLink="khwdbc"
           />
           <Card
              key="Vikram Singh"
-             image="images/abhilash.jpeg"
+             image="images/vikram.jpeg"
              name="Vikram Singh"
              phone="Technical Assistant"
              email="vikram.2023ug2060@iiitranchi.ac.in"
