@@ -1,79 +1,65 @@
 # ProfInfo Central
 
-ProfInfo Central is a web application designed to facilitate communication between students and professors for project requests and approvals. The project is deployed and hosted on Vercel.
+ProfInfo Central is a web application designed to facilitate communication between students and professors for project requests and approvals.
+
+The application allows students to explore professors, request projects, and track the status of their requests. Professors can review, accept, or reject project requests.
 
 ## Deployment
-
-The project is deployed and hosted on Vercel. You can access the deployed application [https://profinfocentral.vercel.app/](https://profinfocentral.vercel.app/).
+Not deployed it.
 
 ## Features
 
-- **Student Portal**: Students can request projects from specific professors.
-- **Professor Portal**: Professors can review and manage project requests from students.
-- **Authentication**: Users can register, login, and logout securely.
-- **Project Management**: Professors can accept or reject project requests, and students can track the status of their requests.
-- **Database Integration**: Uses MongoDB to store user information and project requests.
-- **Responsive Design**: Built with React.js to ensure compatibility across various devices.
+- **Student Portal:** Students can request projects from specific professors.
+- **Professor Portal:** Professors can review and manage project requests from students.
+- **Authentication:** Users can register, log in, and log out securely.
+- **Project Management:** Professors can accept or reject project requests, while students can track the status of their requests.
+- **Database Integration:** MongoDB is used to store user information and project requests.
+- **Responsive Design:** Built with React.js for a responsive user experience.
 
 ## Technologies Used
 
-### Frontend (React.js):
+### Frontend
 
-- **axios**: A promise-based HTTP client for making HTTP requests from the browser. It's commonly used for communicating with the backend API.
-- **react-router-dom**: Enables routing within a React application, allowing you to define routes and navigate between different components.
-### Backend (Express.js):
+- **React.js:** Used to build the user interface.
+- **Axios:** Used for making HTTP requests between the frontend and backend.
+- **React Router DOM:** Used for navigation and routing within the application.
 
-- **express**: Fast, unopinionated, minimalist web framework for Node.js. It simplifies the process of building APIs and handling HTTP requests.
-- **mongoose**: An Object Data Modeling (ODM) library for MongoDB and Node.js. It provides a straightforward schema-based solution to model application data and interact with MongoDB.
-- **jsonwebtoken (JWT)**: For creating and verifying JSON Web Tokens. JWTs are commonly used for authentication and session management in web applications.
-- **bcryptjs**: A library for hashing passwords securely. It's commonly used for encrypting user passwords before storing them in the database.
+### Backend
 
-### Database (MongoDB):
+- **Node.js:** JavaScript runtime used to run the backend.
+- **Express.js:** Used to build the REST API and handle HTTP requests.
+- **Mongoose:** Used for modeling and interacting with MongoDB.
+- **JSON Web Token (JWT):** Used for authentication and session management.
+- **bcryptjs:** Used for securely hashing passwords.
+- **express-validator:** Used for validating and sanitizing incoming requests.
+- **Morgan:** Used for HTTP request logging.
+- **dotenv:** Used for managing environment variables.
 
-- **mongodb/mongoose**: As mentioned above, mongoose is commonly used with MongoDB. Mongoose provides a higher-level abstraction for MongoDB, making it easier to work with MongoDB databases in Node.js applications.
-- **dotenv**: A zero-dependency module that loads environment variables from a .env file into process.env. It's commonly used to manage sensitive information like database connection strings securely.
-- **express-validator**: Middleware for Express.js that provides easy validation and sanitization of incoming request data. It helps ensure that the data sent to the server is valid before processing it.
-- **morgan**: HTTP request logger middleware for Node.js. It logs requests to the server, which can be useful for debugging and monitoring application behavior.
+### Database
 
-## Installation
+- **MongoDB Atlas:** Cloud database used to store application data.
 
-1. Clone the repository using
-    ```bash
-    git clone https://github.com/kartik3777/ProfInfo-Central.git
-    ```
+## Project Structure
 
-2. Navigate to the project directory:
-    ```bash
-    cd ProfInfo-Central/Frontend
-    ```
-3. Now install the dependencies using:
-   ```bash
-   npm install
-   ```
-5. Start the server using:
-   ```bash
-   npm start
-   ```
-6. Access the application in your web browser at `http://localhost:3000`.
-
-## Usage
-
-1. Register as a student or a professor.
-2. Log in with your credentials.
-3. Students can request projects from professors.
-4. Professors can review and manage project requests.
-5. Log out when done.
- ## Authors
-- Pavani priya(220415)
-- Sontam Deekshitha(221075)
-- Lakshyta Mahajan(220581)
-- Kartik(220503)
-- Atharv Moghe(220250)
-- Prabhat Kumar Yadav(220774)
-- Nilesh Maneshwar(220715)
-- Kuldeep Sandip Thakare(220557)
-- Mohd Nasar Siddiqui(220661)
-- Sanapala Jaswanth(220955)
+```text
+ProfInfo-Central/
+│
+├── Frontend/
+│   ├── public/
+│   ├── src/
+│   ├── package.json
+│   └── ...
+│
+└── backend/
+    └── server/
+        ├── Controllers/
+        ├── Middleware/
+        ├── Models/
+        ├── Routes/
+        ├── utils/
+        ├── app.js
+        ├── package.json
+        └── ...
 
 
 
